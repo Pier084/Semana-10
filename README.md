@@ -21,3 +21,20 @@ Proceso Ejercicio_par_no_par
 		Escribir numero,' no es par'
 	FinSi
 FinProceso
+
+Proceso Inicio_de_sesion
+	Definir usuario,contraseña Como Caracter
+	Escribir 'Ingrese su usuario'
+	Leer usuario
+	Escribir 'Ingresa tu contraseña'
+	Leer contraseña
+	Si usuario='Pier' Entonces
+		Si contraseña="Pier123" Entonces
+			Escribir 'DATOS CORRECTOS'
+		SiNo
+			Escribir 'Contraseña incorrecta'
+		FinSi
+	SiNo
+		Escribir 'Usuario incorrecto'
+	FinSi
+FinProceso
